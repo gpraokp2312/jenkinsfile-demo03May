@@ -11,7 +11,7 @@ pipeline{
         stage('Checkout code '){
             steps{
                 
-                git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
+                git 'https://github.com/gpraokp2312/DevOpsCodeDemo.git'
                 
             }
         }
