@@ -37,12 +37,6 @@ pipeline{
                 
             }
         }
-
-        stage ('Deploy-To-Tomcat') {
-            steps {
-                sh 'sudo scp -o StrictHostKeyChecking=no target/*.war root@ip-172-31-44-38:/usr/local/tomcat/webapps/addressbook.war'
-              }      
-           }       
     }
 
 }
