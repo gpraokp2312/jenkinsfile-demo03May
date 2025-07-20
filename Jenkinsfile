@@ -40,7 +40,7 @@ pipeline{
 
         stage ('Deploy-To-Tomcat') {
             steps {
-                sh 'sudo scp -o StrictHostKeyChecking=no target/*.war /usr/local/tomcat/webapps/addressbook.war'
+                sh 'sudo su scp -o StrictHostKeyChecking=no target/*.war /usr/local/tomcat/webapps/addressbook.war'
               }      
            }     
     }
